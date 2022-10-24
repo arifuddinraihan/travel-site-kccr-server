@@ -21,6 +21,10 @@ app.get('/category/:id', (req, res) => {
     res.send(productPerCategory)
 })
 
+app.get('/all-products', (req, res) => {
+    res.send(products)
+})
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
